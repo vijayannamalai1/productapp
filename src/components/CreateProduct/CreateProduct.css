@@ -1,0 +1,65 @@
+/* CreateProduct.css */
+
+.create-product-container {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.create-product-container h1 {
+  text-align: center;
+  color: #333;
+}
+
+.create-product-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.create-product-form div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.create-product-form label {
+  font-weight: bold;
+  color: #555;
+}
+
+.create-product-form input[type="text"],
+.create-product-form input[type="number"],
+.create-product-form input[type="file"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.create-product-container button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.create-product-form button:hover {
+  background-color: #0056b3;
+}
+
+.create-product-container .go-home-button {
+  background-color: #28a745;
+  margin-top: 20px;
+}
+
+.create-product-container .go-home-button:hover {
+  background-color: #218838;
+}

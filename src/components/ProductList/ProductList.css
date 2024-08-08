@@ -1,0 +1,119 @@
+/* Create Product Button Style */
+
+.create-product-btn{
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+/* Container for the product list */
+.product-list-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+    min-height: 100vh; /* Ensure full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+  }
+  
+  /* Header style */
+  .product-list-container h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Flex container for the grid */
+  .product-list-container .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Space between items */
+    justify-content: center; /* Center items horizontally */
+  }
+  
+  /* Flex item style */
+  .product-list-container .product-item {
+    flex: 1 1 calc(33.333% - 20px); /* Adjust the width of each item */
+    max-width: calc(33.333% - 20px); /* Limit the maximum width */
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    height: 250px; /* Increased height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Space between image and text */
+    align-items: center; /* Center align items */
+    min-width: 200px;
+  }
+  
+  /* Product image style */
+  .product-list-container .product-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 5px;
+  }
+  
+  /* Product title and link style */
+  .product-list-container .product-item p {
+    margin: 10px 0 0; /* Reduced margin to close gap */
+    color: #333;
+    font-size: 16px;
+  }
+  
+  /* Link style */
+  .product-list-container .product-item a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .product-list-container .product-item a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .product-list-container .product-item {
+      flex: 1 1 calc(50% - 20px); /* Two items per row */
+      max-width: calc(50% - 20px);
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .product-list-container .product-item {
+      flex: 1 1 100%; /* One item per row */
+      max-width: 100%;
+    }
+  }
+  
+  /* Loading spinner style */
+  .loading-spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    border-top: 4px solid #007bff;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    margin: 0; /* Remove margin */
+    position: absolute; /* Use absolute positioning */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Center using transform */
+  }
+  
+  /* Spinner animation */
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  

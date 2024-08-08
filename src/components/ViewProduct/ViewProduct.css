@@ -1,0 +1,99 @@
+/* ViewProduct.css */
+
+.view-product-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .view-product-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .view-product-form {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .view-product-form div {
+    margin-bottom: 15px;
+  }
+  
+  .view-product-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .view-product-form input[type="text"],
+  .view-product-form input[type="number"],
+  .view-product-form input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .view-product-form p {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .view-product-form img {
+    display: block;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  .view-product-form button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .view-product-form button.update {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .view-product-form button.update:hover {
+    background-color: #0056b3;
+  }
+  
+  .view-product-form button.cancel {
+    background-color: #6c757d;
+    color: white;
+  }
+  
+  .view-product-form button.cancel:hover {
+    background-color: #5a6268;
+  }
+  
+  .view-product-form button.delete {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .view-product-form button.delete:hover {
+    background-color: #c82333;
+  }
+  
+  .view-product-form button.go-home {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .view-product-form button.go-home:hover {
+    background-color: #218838;
+  }
+  
